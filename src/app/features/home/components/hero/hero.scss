@@ -1,0 +1,76 @@
+.hero-container {
+    background-image: url(/backgrounds/fotodecapelos.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1.003);
+    padding: 40px 20px;
+    width: 100%;
+    min-height: 600px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-ufla {
+    max-width: 300px;
+    height: auto;
+}
+
+.hero-title {
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    margin: 50px 0;
+}
+
+.title {
+    margin: 0;
+    margin-bottom: 10px;
+
+    span {
+        font-weight: 700;
+        font-size: 38px;
+    }
+}
+
+.subtitle {
+    margin: 0;
+}
+
+.btn-entrar {
+    background-color: #00943E;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 28px;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.03);
+        opacity: 0.9;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        min-height: auto;
+    }
+
+    .logo-ufla {
+        max-width: 200px;
+    }
+
+    .hero-title {
+        font-size: 26px;
+    }
+
+    .title span {
+        font-weight: 700;
+        font-size: 32px;
+    }
+}

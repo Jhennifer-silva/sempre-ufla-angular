@@ -1,0 +1,64 @@
+.carousel-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+swiper-slide {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.benefit-card {
+  width: 100%;
+  max-width: 240px;
+  height: 280px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+
+}
+
+.card-header {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .card-icon {
+    font-size: 80px;
+    width: 80px;
+    height: 80px;
+    color: #104068;
+  }
+}
+
+.card-footer {
+  background-color: #104068;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  text-align: center;
+
+  .card-text {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}
+
+:host {
+  --swiper-theme-color: #104068;
+  --swiper-navigation-size: 30px;
+}

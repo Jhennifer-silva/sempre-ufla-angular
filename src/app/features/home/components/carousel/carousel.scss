@@ -1,6 +1,12 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .carousel-wrapper {
   width: 100%;
-  max-width: 1200px;
+  max-width: 360px;
   margin: 0 auto;
   padding: 20px 40px;
 }
@@ -15,10 +21,10 @@ swiper-slide {
 .benefit-card {
   width: 100%;
   max-width: 240px;
-  height: 280px;
+  height: 300px;
   background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  border: solid 1px #104068;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -34,16 +40,16 @@ swiper-slide {
   justify-content: center;
   
   .card-icon {
-    font-size: 80px;
-    width: 80px;
-    height: 80px;
-    color: #104068;
+    font-size: 100px;
+    width: 100px;
+    height: 100px;
+    color: #00943E;
   }
 }
 
 .card-footer {
   background-color: #104068;
-  min-height: 80px;
+  min-height: 115px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +58,7 @@ swiper-slide {
 
   .card-text {
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.2;
   }

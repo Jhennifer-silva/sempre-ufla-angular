@@ -1,24 +1,26 @@
 <div class="carousel-wrapper">
   
   <swiper-container 
+    #swiper
     [grabCursor]="true"
     slides-per-view="1" 
-    space-between="10"
+    space-between="50"
+    loop="true"
+    speed="2000"
+    autoplay-delay="0"
+    free-mode="true"
   >
 
     @for (card of cards; track $index) {
       <swiper-slide>
         
         <div class="benefit-card">
-          
           <div class="card-header">
             <mat-icon class="card-icon">{{ card.icon }}</mat-icon>
           </div>
-
           <div class="card-footer">
             <span class="card-text">{{ card.title }}</span>
           </div>
-
         </div>
 
       </swiper-slide>

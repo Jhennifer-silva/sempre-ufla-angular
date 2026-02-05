@@ -1,0 +1,12 @@
+<a *ngIf="rota" 
+   [routerLink]="rota" 
+   class="btn-base"
+   [ngClass]="variant">
+   {{ texto }}
+</a>
+
+<button *ngIf="!rota" 
+   class="btn-base"
+   [ngClass]="variant">
+   {{ texto }}
+</button>

@@ -1,0 +1,38 @@
+.entrar-container {
+    background-image: url(/images/backgrounds/imagemIntegrar.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1.003);
+    padding: 40px 20px;
+    width: 100%;
+    min-height: 400px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.btn-actions {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 425px) {
+    h1 {
+        margin: 0 auto;
+    }
+
+    .btn-actions {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+}

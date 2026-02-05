@@ -1,0 +1,187 @@
+/* Variáveis para facilitar */
+$cor-azul: #004B80;
+$cor-verde: #00943E;
+$altura-nav: 90px;
+
+.navbar {
+  background-color: #fff;
+  height: $altura-nav;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* --- LOGOS --- */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  img {
+    height: 3rem; /* Ajuste conforme necessário */
+    width: auto;
+    display: block;
+  }
+}
+
+.logo-sempre-ufla {
+    height: 7rem !important; /* Ajuste conforme necessário */
+    width: auto;
+    display: block;
+  }
+
+/* --- MENU PRINCIPAL (Desktop) --- */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+
+  .nav-item {
+    position: relative;
+    
+    a, .dropdown-btn {
+      text-decoration: none;
+      color: $cor-azul;
+      font-weight: 500;
+      font-size: 16px;
+      cursor: pointer;
+      transition: color 0.2s;
+      background: none;
+      border: none;
+      font-family: inherit;
+      padding: 5px 10px;
+
+      &:hover, &.active {
+        color: #666;
+      }
+    }
+  }
+}
+
+/* Botão Entrar (Destaque) */
+.btn-entrar {
+  color: $cor-verde !important;
+}
+
+/* --- DROPDOWN CUSTOMIZADO --- */
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-list {
+  display: none; /* Escondido por padrão */
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  min-width: 120px;
+  
+  &.show {
+    display: block; /* Mostra quando ativo */
+  }
+
+  li {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: $cor-azul;
+    transition: background 0.2s;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+}
+
+.arrow {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+/* --- BOTÃO HAMBURGUER (Escondido no Desktop) --- */
+.mobile-toggle {
+  display: none; 
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: $cor-azul;
+    transition: 0.3s;
+  }
+}
+
+/* =========================================
+   MOBILE RESPONSIVO (max-width: 992px)
+   ========================================= */
+@media (max-width: 992px) {
+  
+  .mobile-toggle {
+    display: flex; /* Aparece só no mobile */
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: $altura-nav;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column; /* Itens um embaixo do outro */
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+    
+    /* Efeito de esconder/mostrar */
+    display: none; 
+    &.active {
+      display: flex;
+    }
+
+    .nav-item {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+
+  /* Dropdown no mobile empurra o conteúdo */
+  .dropdown-list {
+    position: static; /* Não flutua mais */
+    box-shadow: none;
+    background-color: #f9f9f9;
+    width: 100%;
+    display: none;
+    
+    &.show {
+      display: block;
+    }
+  }
+  
+  .logo-area img {
+      height: 2.5rem;
+  }
+}

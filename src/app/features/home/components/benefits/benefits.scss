@@ -1,26 +1,27 @@
 .benefits-container {
     padding: 60px 100px;
-    margin-top: 20px;
+    margin: 20px auto;
     display: flex;
     justify-content: center;
-    align-items: stretch; 
+    align-items: stretch;
     gap: 30px;
-    
+
     width: 100%;
+    max-width: 1200px;
     min-height: 350px;
 }
 
 .benefits,
-app-carousel { 
+app-carousel {
     max-width: 1200px;
 }
 
 .benefits {
     display: flex;
     flex-direction: column;
-    
-    justify-content: space-between; 
-    
+
+    justify-content: space-between;
+
     margin: 0;
     margin-left: 10px;
 }
@@ -28,33 +29,34 @@ app-carousel {
 .title {
     color: #00943E;
     font-size: 36px;
-    margin-top: 0; 
+    margin-top: 0;
+    max-width: 500px;
 }
 
-.description{
+.description {
     font-size: 28px;
     font-weight: 300;
 }
 
-.link-benefits{
+.link-benefits {
     text-decoration: underline;
     color: #004B80;
     cursor: pointer;
 }
 
-@media(max-width: 830px){
+@media(max-width: 830px) {
     .benefits-container {
-    flex-direction: column;
-}
+        flex-direction: column;
+    }
 }
 
-@media(max-width: 830px){
+@media(max-width: 830px) {
     .benefits-container {
-    padding: 60px 20px;
-    text-align: justify;
-}
+        padding: 60px 20px;
+        text-align: justify;
+    }
 
-.title {
-    text-align: center; 
-}
+    .title {
+        text-align: center;
+    }
 }

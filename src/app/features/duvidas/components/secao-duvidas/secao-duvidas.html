@@ -1,0 +1,74 @@
+<div class="secao-duvidas-container">
+    <h2>{{ 'duvidas.subtitulo' | translate }}</h2>
+
+    <div class="lista-accordions">
+
+        <app-accordion [title]="'duvidas.q1.pergunta' | translate">
+
+            <p>{{ 'duvidas.q1.linha1' | translate }}</p>
+            <p>{{ 'duvidas.q1.linha2' | translate }}</p>
+
+            <div class="passo-a-passo">
+
+                <p class="item-lista">
+                    <strong>1. </strong>
+                    {{ 'duvidas.q1.item1' | translate }}
+                    <a href="https://sig.ufla.br/modulos/login/nova_senha.php" target="_blank">
+                        {{ 'duvidas.q1.item1_link' | translate }}
+                    </a>
+                    {{ 'duvidas.q1.item1_complemento' | translate }}
+                </p>
+
+                <p class="item-lista">
+                    <strong>2. </strong>
+                    {{ 'duvidas.q1.item2' | translate }}
+                    <a href="https://sig.ufla.br/modulos/login/recuperar_login.php" target="_blank">
+                        {{ 'duvidas.q1.item2_link' | translate }}
+                    </a>
+                    {{ 'duvidas.q1.item2_complemento' | translate }}
+                </p>
+
+                <p class="item-lista">
+                    <strong>3. </strong>
+                    {{ 'duvidas.q1.item3' | translate }}
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSevx01rXMpbYANT6urpSSth1fkKgFPuvKskXM0tzgUgvkvC0w/viewform?usp=header" target="_blank">
+                        {{ 'duvidas.q1.item3_link' | translate }}
+                    </a>
+                    {{ 'duvidas.q1.item3_complemento' | translate }}
+                </p>
+
+            </div>
+
+            <p class="texto-final">{{ 'duvidas.q1.final' | translate }}</p>
+
+        </app-accordion>
+
+        <app-accordion [title]="'duvidas.q2.pergunta' | translate">
+            <p class="item-lista">{{ 'duvidas.q2.resposta' | translate }}</p>
+        </app-accordion>
+
+        <app-accordion [title]="'duvidas.q3.pergunta' | translate">
+            <p class="item-lista">{{ 'duvidas.q3.resposta' | translate }}</p>
+        </app-accordion>
+
+        <app-accordion [title]="'duvidas.q4.pergunta' | translate">
+            <p class="item-lista">{{ 'duvidas.q4.resposta' | translate }}</p>
+        </app-accordion>
+
+        <app-accordion [title]="'duvidas.q5.pergunta' | translate">
+            <p class="item-lista">{{ 'duvidas.q5.resposta' | translate }}</p>
+        </app-accordion>
+
+        <app-accordion [title]="'duvidas.q6.pergunta' | translate">
+            <p class="item-lista">{{ 'duvidas.q6.resposta' | translate }}</p>
+        </app-accordion>
+
+        <app-accordion [title]="'duvidas.q7.pergunta' | translate">
+            <p class="item-lista">{{ 'duvidas.q7.resposta' | translate }}</p>
+        </app-accordion>
+
+        <app-accordion [title]="'duvidas.q8.pergunta' | translate">
+            <p class="item-lista">{{ 'duvidas.q8.resposta' | translate }}</p>
+        </app-accordion>
+    </div>
+</div>

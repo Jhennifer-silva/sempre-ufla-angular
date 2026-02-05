@@ -1,5 +1,5 @@
 .hero-container {
-    background-image: url(/backgrounds/fotodecapelos.png);
+    background-image: url(/images/backgrounds/fotodecapelos.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,25 +40,9 @@
     margin: 0;
 }
 
-.btn-entrar {
-    background-color: #00943E;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 14px 28px;
-    font-size: 16px;
-    transition: 0.3s;
-    cursor: pointer;
-
-    &:hover {
-        transform: scale(1.03);
-        opacity: 0.9;
-    }
-}
-
 @media (max-width: 768px) {
     .hero-container {
-        min-height: auto;
+        height: 100vh;
     }
 
     .logo-ufla {

@@ -1,11 +1,12 @@
 <div class="hero-container">
-    <img src="/logos/LogoUflaMonocromatica.png"
-        alt="Logo da Universidade Federal de Lavras - UFLA na cor branca" class="logo-ufla">
+    <img src="/images/logos/LogoUflaMonocromatica.png"
+        [alt]="'home.logo_alt' | translate" class="logo-ufla">
 
     <div class="hero-title">
-        <p class="title"><span>Bem-vindo(a)</span> à nossa plataforma de egressos!</p>
-        <p class="subtitle">Conecte-se e continue fazendo parte da nossa história.</p>
+        <p class="title"><span>{{ 'home.bem_vindo' | translate }}</span> {{ 'home.texto_boas_vindas' | translate }}</p>
+        <p class="subtitle">{{ 'home.texto_historia' | translate }}</p>
     </div>
 
-    <button class="btn-entrar" (click)="entrarSig()">ENTRAR</button>
+    <app-btn [texto]="'home.entrar_botao' | translate" (click)="entrarSig()" variant="secondary-green">
+        </app-btn>
 </div>

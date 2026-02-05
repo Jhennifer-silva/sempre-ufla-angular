@@ -1,0 +1,72 @@
+.ajuda-universidade-container {
+    padding: 60px 120px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: #FFF;
+    background-color: #104068;
+
+    width: 100%;
+    min-height: 350px;
+}
+
+h1{
+    margin-bottom: 70px;
+        text-align: center;
+    font-size: 2.5rem;
+}
+
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px dashed #ffffff61;
+    padding: 50px 0;
+    max-width: 1200px;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    mat-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 8rem;
+        padding: 60px;
+        color: #00943E;
+    }
+
+    h2{
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 768px){
+
+    .ajuda-universidade-container {
+    padding: 60px 20px;
+}
+
+h1{
+        padding: 0 20px;
+        font-size: 2.2rem;
+
+
+}
+
+    .item {
+    flex-direction: column;
+    }
+}

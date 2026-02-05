@@ -1,1 +1,67 @@
-<p>navbar works!</p>
+<nav class="navbar">
+  <div class="nav-container">
+
+    <div class="logo-area">
+      <a href="https://sempre.ufla.br/">
+        <img class="logo-sempre-ufla" src="images/logos/logo-sempre-ufla.png" alt="Logo Sempre Ufla">
+      </a>
+      <a href="https://ufla.br/" target="_blank" rel="noopener noreferrer">
+        <img src="images/logos/LogoUflaColorida.png" alt="Logo UFLA">
+      </a>
+    </div>
+
+    <button class="mobile-toggle" (click)="toggleMenu()" aria-label="Menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <ul class="nav-menu" [class.active]="!isMenuCollapsed">
+      
+      <li class="nav-item">
+        <a routerLink="/" 
+           routerLinkActive="active" 
+           [routerLinkActiveOptions]="{exact: true}" 
+           (click)="closeMenu()">
+           {{ 'navbar.home' | translate }}
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a routerLink="/ferramentas-e-beneficios" 
+           routerLinkActive="active" 
+           (click)="closeMenu()">
+           {{ 'navbar.beneficios' | translate }}
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a routerLink="/duvidas" 
+           routerLinkActive="active" 
+           (click)="closeMenu()">
+           {{ 'navbar.duvidas' | translate }}
+        </a>
+      </li>
+
+      <li class="nav-item dropdown-container">
+        <button class="dropdown-btn" (click)="toggleLangMenu()">
+           <i class="bi bi-globe2"></i> 
+           {{ 'navbar.idioma' | translate }}
+           <span class="arrow">▼</span>
+        </button>
+
+        <ul class="dropdown-list" [class.show]="isLangMenuOpen">
+          <li (click)="changeLanguage('pt'); closeMenu()">Português</li>
+          <li (click)="changeLanguage('en'); closeMenu()">English</li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a href="https://sig.ufla.br" target="_blank" class="btn-entrar" (click)="closeMenu()">
+           {{ 'navbar.entrar' | translate }}
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</nav>

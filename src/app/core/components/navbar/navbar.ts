@@ -2,24 +2,26 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
 import { RouterModule } from '@angular/router'; 
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { MatIconModule } from "@angular/material/icon";
 
 @Component({
   selector: 'app-navbar',
-  standalone: true,
-  imports: [CommonModule, RouterModule, TranslateModule],
+  imports: [CommonModule, RouterModule, TranslateModule, MatIconModule],
   templateUrl: './navbar.html',
   styleUrls: ['./navbar.scss']
 })
 export class Navbar {
 
   isMenuCollapsed = true;
-  
   isLangMenuOpen = false;
 
   constructor(private translate: TranslateService) {}
 
   changeLanguage(lang: string) {
     this.translate.use(lang);
+
+    localStorage.setItem('language', lang);
+
     this.closeMenu();
   }
 

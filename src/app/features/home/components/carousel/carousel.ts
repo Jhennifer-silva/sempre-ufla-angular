@@ -23,7 +23,7 @@ export class Carousel{
   },
   { 
     title: 'carrossel.google',
-    icon: 'travel_explore' // ou o ícone que preferir
+    icon: 'settings'
   },
   { 
     title: 'carrossel.email',
@@ -35,7 +35,7 @@ export class Carousel{
   },
   { 
     title: 'carrossel.colegas',
-    icon: 'groups'
+    icon: 'person_search'
   }
 ];
 }

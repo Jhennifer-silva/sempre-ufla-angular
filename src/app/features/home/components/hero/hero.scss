@@ -42,7 +42,7 @@
 
 @media (max-width: 768px) {
     .hero-container {
-        height: 100vh;
+        height: calc(100vh - 10px);
     }
 
     .logo-ufla {

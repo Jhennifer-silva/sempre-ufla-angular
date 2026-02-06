@@ -1,1 +1,44 @@
-<p>footer works!</p>
+<footer class="footer-container">
+    <div class="informacoes">
+        <div class="redesSociais">
+            <h3>{{ 'rodape.nosSiga' | translate }}</h3>
+
+            <p>
+                <a href="https://www.instagram.com/uflabr" target="_blank" rel="noopener noreferrer">
+                    &#64;uflabr
+                </a>
+            </p>
+
+            <p>
+                <a href="https://www.instagram.com/sempreufla" target="_blank" rel="noopener noreferrer">
+                    &#64;sempreufla
+                </a>
+            </p>
+        </div>
+
+        <div class="explorar">
+            <h3>{{ 'rodape.explorar' | translate }}</h3>
+
+            <a routerLink="/">{{ 'rodape.home' | translate }}</a>
+            <a routerLink="/beneficios-vantagens">{{ 'rodape.beneficios' | translate }}</a>
+            <a routerLink="/duvidas">{{ 'rodape.duvidas' | translate }}</a>
+
+            <a href="https://sig.ufla.br" target="_blank" rel="noopener noreferrer">
+                {{ 'rodape.entrar' | translate }}
+            </a>
+        </div>
+
+        <div class="contato">
+            <h3>{{ 'rodape.contato' | translate }}</h3>
+            <p>egressos.proeec&#64;ufla.br</p>
+            <p>(35) 3829-1212</p>
+        </div>
+
+        <div class="creditos">
+            <p>
+                {{ 'rodape.copyright' | translate }}
+                <span id="criador">By Universidade Federal de Lavras</span>
+            </p>
+        </div>
+    </div>
+</footer>

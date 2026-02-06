@@ -1,0 +1,121 @@
+{
+  "navbar": {
+    "home": "HOME",
+    "beneficios": "BENEFITS AND ADVANTAGES  ",
+    "duvidas": "QUESTIONS",
+    "idioma": "Language",
+    "entrar": "SIGN IN"
+  },
+  "home": {
+    "logo_alt": "Logo da UFLA na cor branca",
+    "bem_vindo": "Welcome",
+    "texto_boas_vindas": "to our alumni platform!",
+    "texto_historia": "Connect and continue to be part of our story.",
+    "entrar_botao": "Sign in",
+    "beneficios_titulo": "Benefits and Advantages (coming soon)",
+    "beneficios_texto": "By registering on the UFLA Alumni Platform, you will soon be able to access exclusive benefits.",
+    "quero_saber": "I WANT TO KNOW MORE...",
+    "como_ajuda_titulo": "How do you help the University?",
+    "perfil_titulo": "By filling out your professional profile",
+    "perfil_texto": "Share your professional journey and help UFLA evaluate and improve the courses offered, allowing society as a whole to benefit.",
+    "questionario_titulo": "By answering brief questionnaires",
+    "questionario_texto": "Your experience in the job market is essential to enhance UFLA's undergraduate and graduate courses, contributing to the constant improvement of education.",
+    "email_titulo": "By keeping your contact information updated",
+    "email_texto": "By registering and keeping your data updated, you will receive important information and news from the University in an agile and direct way.",
+    "integrar_titulo": "Ready to join this network?",
+    "duvidas_botao": "Questions?"
+  },
+  "carrossel": {
+    "biblioteca": "Virtual Library",
+    "google": "Google Tools",
+    "email": "Personalized email",
+    "wifi": "UFLA Wifi",
+    "colegas": "Reconnect with your classmates"
+  },
+  "beneficios": {
+    "tituloPrincipal": "Benefits and Advantages (coming soon)",
+    "subtitulo": "Exclusive to alumni who remain connected to UFLA through the Alumni Platform and keep their data updated.",
+    "tituloSecao2": "Check out the benefits and advantages",
+    "biblioteca": {
+      "titulo": "Access to the library's virtual collection",
+      "texto": "Access to UFLA Library's virtual collection, featuring a vast range of academic materials, research, and resources to support your continuous learning and professional development."
+    },
+    "email": {
+      "titulo": "Personalized email @egressos.ufla.br",
+      "texto": "A personalized email @egressos.ufla.br, which proves your connection to the university and provides access to UFLA services and tools."
+    },
+    "ferramentas": {
+      "titulo": "Access to Google Workspace tools",
+      "texto": "You will have full access to Google Workspace tools such as Gmail, Google Drive, Docs, Sheets, and others, which help enhance your organization, collaboration, and productivity in professional and academic activities."
+    },
+    "wifi": {
+      "titulo": "UFLA Wifi",
+      "texto": "You will have access to UFLA Wi-Fi, ensuring fast and secure connectivity throughout the campus, facilitating access to online resources and efficient communication with the university."
+    },
+    "turma": {
+      "titulo": "Find your classmates",
+      "texto": "Have the opportunity to locate and connect with former classmates, promoting networking, professional updates, and strengthening ties with UFLA's academic community."
+    },
+    "final": "Soon, you will have access to all these benefits...",
+    "botao": "Sign in"
+  },
+  "duvidas": {
+    "tituloPrincipal": "Common Questions",
+    "subtitulo": "Questions:",
+    "q1": {
+      "pergunta": "How can I access the PLAEG alumni platform?",
+      "linha1": "The Alumni Module of SIG-UFLA was created to strengthen our bond, learn about your professional journey, and offer exclusive benefits.",
+      "linha2": "We know that accessing the system can raise questions, so we have prepared a simple step-by-step guide to assist you:",
+      "item1": "If you remember your SIG-UFLA login (username): ",
+      "item1_link": "Recover your password here.",
+      "item1_complemento": " Enter your username, and the system will send the password recovery instructions to the alternative email registered during your undergraduate/postgraduate studies.",
+      "item2": "If you do not remember your login: ",
+      "item2_link": "Recover your username here.",
+      "item2_complemento": " Enter your CPF (Brazilian ID) and date of birth, and the username will be sent to the alternative email registered during your undergraduate/postgraduate studies.",
+      "item3": "If you cannot recover it via the alternative email: Fill out the ",
+      "item3_link": "form available here.",
+      "item3_complemento": " Our team will manually enable your access and contact you as soon as possible.",
+      "final": "After logging in, access the \"Alumni Profile\" menu to use all features."
+    },
+    "q2": {
+      "pergunta": "What information does UFLA collect and how is it used?",
+      "resposta": "UFLA collects basic information such as name, course, year of completion, and contact details, as well as information about your professional trajectory. This data is used to keep the alumni network active and support the improvement of the institution's course quality. For more information on this subject, access the Personal Data Use Consent Term, available on the PLAEG alumni platform."
+    },
+    "q3": {
+      "pergunta": "Who can register on the PLAEG alumni platform?",
+      "resposta": "All former students of UFLA can register, regardless of course or year of graduation. The platform is aimed at both graduates and postgraduates of the institution."
+    },
+    "q4": {
+      "pergunta": "Is there a cost to register on the PLAEG alumni platform?",
+      "resposta": "No, registration is completely free. In addition, there are benefits for alumni registered on the PLAEG alumni platform (see question \"What benefits will I have by registering on the PLAEG alumni platform?\")."
+    },
+    "q5": {
+      "pergunta": "What benefits will I get from registering?",
+      "resposta": "By registering on the PLAEG alumni platform, you can have access to various benefits, such as events and training courses, networking with other alumni, an email account @egressos.ufla.br, access to UFLA Library's virtual collection, to the Google application suite (Google Workspace), and to UFLA's Wi-Fi network."
+    },
+    "q6": {
+      "pergunta": "How often do I need to update my registration?",
+      "resposta": "There is no mandatory frequency, but we recommend that you review your information whenever there are significant changes, such as a job change, completion of a new course, or updating contact details. Keeping your registration updated is important so that UFLA can offer content and opportunities aligned with your professional profile."
+    },
+    "q7": {
+      "pergunta": "Does the PLAEG platform offer networking opportunities for alumni?",
+      "resposta": "Yes! The platform allows an alumnus to search for information about their classmates, which can help in creating a valuable contact network for exchanging experiences, referrals, and job market opportunities."
+    },
+    "q8": {
+      "pergunta": "Is there any means of contact in case I have questions or problems with my registration?",
+      "resposta": "Yes! If you have any questions or issues, you can contact the Alumni Advisory of the Pro-Rectory of Extension, Sports, and Culture (PROEEC) via email at egressos.proeec@ufla.br or by phone at (35) 3829-1212."
+    },
+    "contato": "Our question is not here? Contact us by email",
+    "ou": "or telephone"
+  },
+  "rodape": {
+    "nosSiga": "Follow us",
+    "explorar": "Explore",
+    "home": "Home",
+    "beneficios": "Benefits and Advantages",
+    "duvidas": "Questions",
+    "entrar": "Sign in",
+    "contato": "Contacts",
+    "copyright": "Copyright © 2025 Sempre UFLA"
+  }
+}

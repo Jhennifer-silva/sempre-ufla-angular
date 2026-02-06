@@ -28,7 +28,7 @@
       </li>
 
       <li class="nav-item">
-        <a routerLink="/ferramentas-e-beneficios" 
+        <a routerLink="/beneficios-vantagens" 
            routerLinkActive="active" 
            (click)="closeMenu()">
            {{ 'navbar.beneficios' | translate }}
@@ -47,7 +47,7 @@
         <button class="dropdown-btn" (click)="toggleLangMenu()">
            <i class="bi bi-globe2"></i> 
            {{ 'navbar.idioma' | translate }}
-           <span class="arrow">▼</span>
+           <mat-icon>language</mat-icon>
         </button>
 
         <ul class="dropdown-list" [class.show]="isLangMenuOpen">

@@ -1,17 +1,16 @@
-/* Variáveis para facilitar */
 $cor-azul: #004B80;
 $cor-verde: #00943E;
-$altura-nav: 90px;
+$altura-nav: 70px;
 
 .navbar {
-  background-color: #fff;
+  background-color: #F8F9FA;
   height: $altura-nav;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -23,41 +22,40 @@ $altura-nav: 90px;
   justify-content: space-between;
 }
 
-/* --- LOGOS --- */
 .logo-area {
   display: flex;
   align-items: center;
   gap: 15px;
 
   img {
-    height: 3rem; /* Ajuste conforme necessário */
+    height: 3rem;
     width: auto;
     display: block;
   }
 }
 
 .logo-sempre-ufla {
-    height: 7rem !important; /* Ajuste conforme necessário */
-    width: auto;
-    display: block;
-  }
+  height: 7rem !important;
+  width: auto;
+  display: block;
+}
 
-/* --- MENU PRINCIPAL (Desktop) --- */
 .nav-menu {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   margin: 0;
   padding: 0;
 
   .nav-item {
     position: relative;
-    
-    a, .dropdown-btn {
+
+    a,
+    .dropdown-btn {
       text-decoration: none;
       color: $cor-azul;
-      font-weight: 500;
+      font-weight: 400;
       font-size: 16px;
       cursor: pointer;
       transition: color 0.2s;
@@ -66,38 +64,41 @@ $altura-nav: 90px;
       font-family: inherit;
       padding: 5px 10px;
 
-      &:hover, &.active {
+      &:hover {
         color: #666;
+      }
+
+      &.active {
+        cursor: default;
+        color: #004B80;
       }
     }
   }
 }
 
-/* Botão Entrar (Destaque) */
 .btn-entrar {
   color: $cor-verde !important;
 }
 
-/* --- DROPDOWN CUSTOMIZADO --- */
 .dropdown-container {
   position: relative;
 }
 
 .dropdown-list {
-  display: none; /* Escondido por padrão */
+  display: none;
   position: absolute;
   top: 100%;
   right: 0;
-  background: white;
+  background: #F8F9FA;
   list-style: none;
   padding: 10px 0;
   margin: 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   min-width: 120px;
-  
+
   &.show {
-    display: block; /* Mostra quando ativo */
+    display: block;
   }
 
   li {
@@ -112,14 +113,22 @@ $altura-nav: 90px;
   }
 }
 
-.arrow {
-  font-size: 10px;
-  margin-left: 5px;
+.dropdown-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  mat-icon {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-/* --- BOTÃO HAMBURGUER (Escondido no Desktop) --- */
 .mobile-toggle {
-  display: none; 
+  display: none;
   background: none;
   border: none;
   cursor: pointer;
@@ -128,19 +137,24 @@ $altura-nav: 90px;
 
   .bar {
     width: 25px;
-    height: 3px;
-    background-color: $cor-azul;
+    height: 2px;
+    border-radius: 99px;
+    background-color: #666;
     transition: 0.3s;
   }
 }
 
-/* =========================================
-   MOBILE RESPONSIVO (max-width: 992px)
-   ========================================= */
 @media (max-width: 992px) {
-  
+
+  .nav-container {
+    padding: 0 15px;
+  }
+
   .mobile-toggle {
-    display: flex; /* Aparece só no mobile */
+    display: flex;
+    border: solid 1px #eaeaeb;
+    border-radius: 6px;
+    padding: 10px;
   }
 
   .nav-menu {
@@ -148,15 +162,15 @@ $altura-nav: 90px;
     top: $altura-nav;
     left: 0;
     width: 100%;
-    background-color: white;
-    flex-direction: column; /* Itens um embaixo do outro */
+    background-color: #F8F9FA;
+    flex-direction: column;
     align-items: center;
     padding: 20px 0;
     border-top: 1px solid #eee;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
-    
-    /* Efeito de esconder/mostrar */
-    display: none; 
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+
+    display: none;
+
     &.active {
       display: flex;
     }
@@ -168,20 +182,31 @@ $altura-nav: 90px;
     }
   }
 
-  /* Dropdown no mobile empurra o conteúdo */
   .dropdown-list {
-    position: static; /* Não flutua mais */
+    position: static;
     box-shadow: none;
     background-color: #f9f9f9;
     width: 100%;
     display: none;
-    
+    text-align: center;
+
     &.show {
       display: block;
     }
   }
-  
+
+  .nav-menu[_ngcontent-ng-c3838180516] .nav-item[_ngcontent-ng-c3838180516] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .logo-area img {
-      height: 2.5rem;
+    height: 1.6rem;
+  }
+
+  .logo-sempre-ufla {
+    height: 3.8rem !important;
   }
 }

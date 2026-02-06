@@ -1,7 +1,7 @@
 .secao-duvidas-container {
   width: 100%;
-  padding: 60px 20px; 
-  max-width: 1200px; 
+  padding: 60px 20px;
+  max-width: 1200px;
   margin: 0 auto;
   display: block;
   overflow: hidden;
@@ -24,4 +24,19 @@ a {
   white-space: normal;
   display: inline-block;
   max-width: 100%;
+}
+
+.contatoDuvida {
+  color: #004B80;
+  font-size: 18px;
+}
+
+.meioContato {
+  font-weight: 600;
+}
+
+@media (max-width: 335px) {
+  .contatoDuvida {
+    font-size: 12px;
+  }
 }

@@ -51,8 +51,8 @@
         </button>
 
         <ul class="dropdown-list" [class.show]="isLangMenuOpen">
-          <li (click)="changeLanguage('pt'); closeMenu()">Português</li>
-          <li (click)="changeLanguage('en'); closeMenu()">English</li>
+          <li (click)="changeLanguage('pt'); closeMenu()">{{ 'navbar.idiomas.portugues' | translate }}</li>
+          <li (click)="changeLanguage('en'); closeMenu()">{{ 'navbar.idiomas.ingles' | translate }}</li>
         </ul>
       </li>
 

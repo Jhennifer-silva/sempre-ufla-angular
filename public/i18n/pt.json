@@ -3,8 +3,12 @@
     "home": "HOME",
     "beneficios": "BENEFÍCIOS E VANTAGENS",
     "duvidas": "DÚVIDAS",
-    "idioma": "Idioma",
-    "entrar": "ENTRAR"
+    "idioma": "IDIOMA",
+    "entrar": "ENTRAR",
+    "idiomas": {
+      "portugues": "Português",
+      "ingles": "Inglês"
+    }
   },
   "home": {
     "logo_alt": "Logo da UFLA na cor branca",

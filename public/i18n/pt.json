@@ -16,8 +16,8 @@
     "texto_boas_vindas": "à nossa plataforma de egressos!",
     "texto_historia": "Conecte-se e continue fazendo parte da nossa história.",
     "entrar_botao": "Entrar",
-    "beneficios_titulo": "Benefícios e vantagens (em breve)",
-    "beneficios_texto": "Ao se cadastrar na Plataforma de Egressos da UFLA, em breve, você poderá acessar benefícios e vantagens exclusivos.",
+    "beneficios_titulo": "Benefícios e vantagens",
+    "beneficios_texto": "Ao se cadastrar na Plataforma de Egressos da UFLA, você poderá acessar benefícios e vantagens exclusivos.",
     "quero_saber": "QUERO SABER MAIS...",
     "como_ajuda_titulo": "Como você ajuda a Universidade?",
     "perfil_titulo": "Preenchendo seu perfil profissional",
@@ -37,7 +37,7 @@
     "colegas": "Reencontre seus colegas"
   },
   "beneficios": {
-    "tituloPrincipal": "Benefícios e vantagens (em breve)",
+    "tituloPrincipal": "Benefícios e vantagens",
     "subtitulo": "Exclusivo para egressos(as) que permanecem conectados à UFLA por meio da Plataforma de Egressos e mantêm seus dados atualizados.",
     "tituloSecao2": "Confira os benefícios e vantagens",
     "biblioteca": {
@@ -60,7 +60,7 @@
       "titulo": "Encontre seus colegas",
       "texto": "Localize e conecte-se com ex-colegas de curso, fortalecendo networking e vínculos acadêmicos."
     },
-    "final": "Em breve, você terá acesso a todos esses benefícios...",
+    "final": "Você terá acesso a todos esses benefícios...",
     "botao": "Entrar"
   },
   "duvidas": {

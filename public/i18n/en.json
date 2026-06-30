@@ -16,8 +16,8 @@
     "texto_boas_vindas": "to our alumni platform!",
     "texto_historia": "Connect and continue to be part of our story.",
     "entrar_botao": "Sign in",
-    "beneficios_titulo": "Benefits and Advantages (coming soon)",
-    "beneficios_texto": "By registering on the UFLA Alumni Platform, you will soon be able to access exclusive benefits.",
+    "beneficios_titulo": "Benefits and Advantages",
+    "beneficios_texto": "By registering on the UFLA Alumni Platform, you will be able to access exclusive benefits.",
     "quero_saber": "I WANT TO KNOW MORE...",
     "como_ajuda_titulo": "How do you help the University?",
     "perfil_titulo": "By filling out your professional profile",
@@ -37,7 +37,7 @@
     "colegas": "Reconnect with your classmates"
   },
   "beneficios": {
-    "tituloPrincipal": "Benefits and Advantages (coming soon)",
+    "tituloPrincipal": "Benefits and Advantages",
     "subtitulo": "Exclusive to alumni who remain connected to UFLA through the Alumni Platform and keep their data updated.",
     "tituloSecao2": "Check out the benefits and advantages",
     "biblioteca": {
@@ -60,7 +60,7 @@
       "titulo": "Find your classmates",
       "texto": "Have the opportunity to locate and connect with former classmates, promoting networking, professional updates, and strengthening ties with UFLA's academic community."
     },
-    "final": "Soon, you will have access to all these benefits...",
+    "final": "You will have access to all these benefits...",
     "botao": "Sign in"
   },
   "duvidas": {

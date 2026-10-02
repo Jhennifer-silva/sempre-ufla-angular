@@ -37,6 +37,16 @@
     margin: 0 0 10px 0;
 }
 
+.benefit.ipetech h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.benefit.ipetech h3 a:hover,
+.benefit.ipetech h3 a:focus-visible {
+    text-decoration: underline;
+}
+
 .benefit p {
     color: #000;
     font-size: 0.95rem;

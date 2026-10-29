@@ -1,12 +1,8 @@
 import { Routes } from '@angular/router';
-import { Home } from './features/home/home';
-import { BeneficiosVantagens } from './features/beneficios-vantagens/beneficios-vantagens';
-import { Duvidas } from './features/duvidas/duvidas';
-import { GuiaAcesso } from './features/guia-acesso/guia-acesso';
 
 export const routes: Routes = [
-    {path: '', component: Home},
-    {path: 'beneficios-vantagens', component: BeneficiosVantagens},
-    {path: 'duvidas', component: Duvidas},
-    {path: 'guia-acesso', component: GuiaAcesso},
+    { path: '', loadComponent: () => import('./features/home/home').then((module) => module.Home) },
+    { path: 'beneficios-vantagens', loadComponent: () => import('./features/beneficios-vantagens/beneficios-vantagens').then((module) => module.BeneficiosVantagens) },
+    { path: 'duvidas', loadComponent: () => import('./features/duvidas/duvidas').then((module) => module.Duvidas) },
+    { path: 'guia-acesso', loadComponent: () => import('./features/guia-acesso/guia-acesso').then((module) => module.GuiaAcesso) },
 ];

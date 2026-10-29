@@ -36,6 +36,10 @@ export class Carousel{
   { 
     title: 'carrossel.colegas',
     icon: 'person_search'
+  },
+  { 
+    title: 'carrossel.ipetech',
+    icon: 'business'
   }
 ];
 }

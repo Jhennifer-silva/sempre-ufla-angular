@@ -34,7 +34,8 @@
     "google": "Ferramentas Google",
     "email": "Email personalizado",
     "wifi": "Wifi da UFLA",
-    "colegas": "Reencontre seus colegas"
+    "colegas": "Reencontre seus colegas",
+    "ipetech": "Parceria com o IpêTech"
   },
   "beneficios": {
     "tituloPrincipal": "Benefícios e vantagens",
@@ -143,7 +144,7 @@
     },
     "recuperacao": {
       "titulo": "Recuperação de acesso",
-      "descricao": "Antes de seguir para o tutorial, escolha a opção que melhor atende à sua situação para recuperar o acesso ao SIG-UFLA.",
+      "descricao": "Escolha a opção que melhor atende à sua situação para recuperar o acesso ao SIG-UFLA.",
       "senha": {
         "titulo": "Recuperar senha",
         "texto": "Se você lembra do seu login (usuário) do SIG-UFLA, informe-o e o sistema enviará as instruções para recuperar sua senha para o e-mail alternativo cadastrado durante sua graduação/pós-graduação.",

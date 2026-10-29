@@ -13,7 +13,4 @@ import { SecaoEntrar } from "./components/secao-entrar/secao-entrar";
   styleUrl: './home.scss',
 })
 export class Home {
-  entrarSig() {
-    window.open('https://sig.ufla.br', '_blank');
-  }
 }

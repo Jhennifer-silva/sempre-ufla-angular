@@ -1,182 +1,184 @@
-$cor-azul: #004B80;
-$cor-verde: #00943E;
+$cor-azul: #004b80;
+$cor-verde: #00943e;
 
 .footer-container {
-    position: relative;
-    background-color: #F8F9FA;
-    height: 270px;
-    width: 100%;
-    padding: 0 60px 40px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.1);
-
-
+  position: relative;
+  background-color: #f8f9fa;
+  height: 270px;
+  width: 100%;
+  padding: 0 60px 40px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .informacoes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: start;
-    width: 100%;
-    font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  width: 100%;
+  font-size: 16px;
 
-    .redesSociais,
-    .explorar,
-    .contato {
-        color: $cor-azul;
-        display: flex;
-        flex-direction: column;
+  .redesSociais,
+  .explorar,
+  .contato {
+    color: $cor-azul;
+    display: flex;
+    flex-direction: column;
 
-        h3 {
-            font-size: 32px;
-            display: flex;
-            flex-direction: column;
-            font-weight: 600;
-            white-space: nowrap;
-            margin-top: 0;
-        }
+    h3 {
+      font-size: 32px;
+      display: flex;
+      flex-direction: column;
+      font-weight: 600;
+      white-space: nowrap;
+      margin-top: 0;
+    }
+  }
+
+  .redesSociais {
+    justify-self: start;
+    text-align: left;
+
+    h3 {
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      border-bottom: 1px dashed $cor-verde;
     }
 
-    .redesSociais {
-        justify-self: start;
-        text-align: left;
-
-        h3 {
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-            border-bottom: 1px dashed $cor-verde;
-        }
-
-        p {
-            margin: 0;
-            margin-top: 5px;
-            line-height: 1.4;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-            transition: color 0.2s;
-
-            &:hover {
-                color: $cor-verde;
-            }
-
-            &:focus{
-                outline: none;
-            }
-        }
+    p {
+      margin: 0;
+      margin-top: 5px;
+      line-height: 1.4;
     }
 
-    .explorar {
-        justify-self: center;
-        text-align: center;
-        gap: 10px;
-        white-space: nowrap;
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s;
 
-        h3 {
-            margin-bottom: 10px;
-            color: $cor-verde;
-        }
+      &:hover {
+        color: $cor-verde;
+      }
 
-        a {
-            color: inherit;
-            text-decoration: none;
-            transition: 0.2s;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
 
-            &:hover {
-                font-weight: 500;
-            }
-        }
+  .explorar {
+    justify-self: center;
+    text-align: center;
+    gap: 10px;
+    white-space: nowrap;
+
+    h3 {
+      margin-bottom: 10px;
+      color: $cor-verde;
     }
 
-    .contato {
-        justify-self: end;
-        text-align: left;
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: 0.2s;
 
-        h3 {
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-            border-bottom: 1px dashed $cor-verde;
-        }
+      &:hover {
+        font-weight: 500;
+      }
 
-        p {
-            margin: 0;
-            margin-top: 5px;
-            line-height: 1.4;
-        }
+      &.ativo {
+        font-weight: 600;
+        cursor: default;
+      }
     }
+  }
+
+  .contato {
+    justify-self: end;
+    text-align: left;
+
+    h3 {
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      border-bottom: 1px dashed $cor-verde;
+    }
+
+    p {
+      margin: 0;
+      margin-top: 5px;
+      line-height: 1.4;
+    }
+  }
 }
 
 .creditos {
-    color: #000;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 12px;
-    white-space: nowrap;
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  white-space: nowrap;
 }
 
 @media (max-width: 778px) {
-    .informacoes {
-        grid-template-columns: 1fr 1fr;
+  .informacoes {
+    grid-template-columns: 1fr 1fr;
 
-        .explorar {
-            display: none;
-        }
+    .explorar {
+      display: none;
     }
+  }
 }
 
 @media (max-width: 596px) {
+  .footer-container {
+    padding: 0;
+    height: auto;
+  }
 
-    .footer-container {
-        padding: 0;
-        height: auto;
-    }
+  .informacoes {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
 
-    .informacoes {
-        display: flex;
-        flex-direction: column;
-        padding: 20px 0px;
-        justify-content: center;
-        align-items: start;
-        gap: 15px;
+    .redesSociais,
+    .contato {
+      justify-self: auto;
+      text-align: left;
+      margin-left: 40px;
 
-        .redesSociais,
-        .contato {
-            justify-self: auto;
-            text-align: left;
-            margin-left: 40px;
+      p {
+        margin-top: -6px;
+        margin-bottom: 6px;
+      }
 
-            p {
-                margin-top: -6px;
-                margin-bottom: 6px;
-            }
+      h3 {
+        padding-bottom: 2px;
+        font-size: 30px;
 
-            h3 {
-                padding-bottom: 2px;
-                font-size: 30px;
-
-                &::after {
-                    content: "";
-                    width: 82vw;
-                    height: 1px;
-                    display: block;
-                }
-            }
+        &::after {
+          content: "";
+          width: 82vw;
+          height: 1px;
+          display: block;
         }
-
-        .contato {
-            padding-bottom: 40px;
-        }
+      }
     }
 
-    .creditos {
-        margin-bottom: 0;
-        font-size: 2.2vw;
+    .contato {
+      padding-bottom: 40px;
     }
+  }
+
+  .creditos {
+    margin-bottom: 0;
+    font-size: 2.2vw;
+  }
 }

@@ -9,7 +9,4 @@ import { CustomButton } from "../../../../core/components/custom-button/custom-b
   styleUrl: './secao-entrar.scss',
 })
 export class SecaoEntrar {
-  entrarSig(){
-    window.open('https://sig.ufla.br', '_blank');
-  }
 }

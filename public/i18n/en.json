@@ -125,5 +125,71 @@
     "entrar": "Sign in",
     "contato": "Contacts",
     "copyright": "Copyright © 2025 Sempre UFLA"
+  },
+  "guiaAcesso": {
+    "portal": "ALUMNI PORTAL • UFLA",
+    "titulo": "Your access starts here",
+    "descricao": "The Alumni Module of SIG-UFLA was created to strengthen our bond, learn about your professional journey, and offer exclusive benefits.",
+    "situacaoPergunta": "Which situation applies to you?",
+    "situacao": {
+      "temAcesso": "I already have access to SIG-UFLA",
+      "precisaRecuperar": "I need to recover my access to SIG-UFLA"
+    },
+    "temAcesso": {
+      "etiqueta": "FIRST, ACCESS THE SYSTEM",
+      "titulo": "Access is through SIG-UFLA",
+      "texto": "Log in to UFLA's Integrated Management System. After logging in, follow the three steps below to update your profile.",
+      "botao": "Go to SIG-UFLA"
+    },
+    "recuperacao": {
+      "titulo": "Access recovery",
+      "descricao": "Before moving on to the tutorial, choose the option that best fits your situation to recover your access to SIG-UFLA.",
+      "senha": {
+        "titulo": "Recover password",
+        "texto": "If you remember your SIG-UFLA login (username), enter it and the system will send the password recovery instructions to the alternative email registered during your undergraduate/postgraduate studies.",
+        "botao": "Recover password"
+      },
+      "usuario": {
+        "titulo": "Recover username",
+        "texto": "If you do not remember your login, enter your CPF (Brazilian ID) and date of birth, and the username will be sent to the alternative email registered during your undergraduate/postgraduate studies.",
+        "botao": "Recover username"
+      },
+      "formulario": {
+        "titulo": "Fill out the form",
+        "texto": "If you cannot recover your access via the alternative email, fill out the available form. Our team will manually enable your access and contact you as soon as possible.",
+        "botao": "Fill out the form"
+      }
+    },
+    "depois": {
+      "titulo": "After logging in to SIG-UFLA",
+      "descricao": "These steps are carried out inside the system, after you log in.",
+      "passo1": {
+        "titulo": "Select Alumni Profile",
+        "texto": "In the SIG-UFLA main menu, find the Alumni section and select Alumni Profile."
+      },
+      "passo2": {
+        "titulo": "Accept the terms and update your data",
+        "texto": "Accept the consent term and review your personal and contact data. Update whatever is necessary."
+      },
+      "passo3": {
+        "titulo": "Share your journey",
+        "texto": "Also update your professional information, other courses, and projects you have carried out."
+      },
+      "menu": {
+        "titulo": "Find it in the main menu"
+      }
+    },
+    "aviso": "Keep your data updated to receive opportunities and stay connected to UFLA.",
+    "ajuda": {
+      "titulo": "Need help?",
+      "texto": "If you have difficulty accessing SIG or updating your profile, contact our team.",
+      "email": "egressos.proeec@ufla.br",
+      "consultar": "View questions"
+    },
+    "vinculo": {
+      "titulo": "Your bond with UFLA continues",
+      "texto": "Discover the resources and benefits available to the alumni community.",
+      "link": "Discover benefits and advantages"
+    }
   }
 }

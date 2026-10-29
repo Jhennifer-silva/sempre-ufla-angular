@@ -1,0 +1,156 @@
+<section class="guia-acesso">
+  <header class="guia-cabecalho">
+    <h1>
+      <span class="numero-etapa">1</span>
+      {{ 'guiaAcesso.titulo' | translate }}
+    </h1>
+    <p class="guia-descricao">{{ 'guiaAcesso.descricao' | translate }}</p>
+  </header>
+
+  <div class="guia-conteudo">
+    <h2 class="guia-pergunta">
+      {{ 'guiaAcesso.situacaoPergunta' | translate }}
+    </h2>
+
+    <mat-tab-group class="guia-abas" animationDuration="0ms">
+      <mat-tab [label]="'guiaAcesso.situacao.temAcesso' | translate">
+        <div class="card-acesso-sig">
+          <div class="card-icone-texto">
+            <mat-icon fontSet="material-symbols-outlined">login</mat-icon>
+
+            <div class="card-textos">
+              <span>{{ 'guiaAcesso.temAcesso.etiqueta' | translate }}</span>
+              <h3>{{ 'guiaAcesso.temAcesso.titulo' | translate }}</h3>
+              <p>{{ 'guiaAcesso.temAcesso.texto' | translate }}</p>
+            </div>
+          </div>
+
+          <a
+            class="botao-link-externo"
+            href="https://sig.ufla.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ 'guiaAcesso.temAcesso.botao' | translate }}
+            <mat-icon>launch</mat-icon>
+          </a>
+        </div>
+      </mat-tab>
+
+      <mat-tab [label]="'guiaAcesso.situacao.precisaRecuperar' | translate">
+        <div class="aba-recuperacao">
+          <h3>{{ 'guiaAcesso.recuperacao.titulo' | translate }}</h3>
+          <p>{{ 'guiaAcesso.recuperacao.descricao' | translate }}</p>
+
+          <div class="lista-opcoes-recuperacao">
+            @for (opcao of opcoesRecuperacao; track opcao.chave) { @let chave =
+            'guiaAcesso.recuperacao.' + opcao.chave;
+
+            <div class="card-opcao-recuperacao">
+              <div class="icone-texto">
+                <mat-icon>circle</mat-icon>
+
+                <div class="opcao-textos">
+                  <h4>{{ chave + '.titulo' | translate }}</h4>
+                  <p>{{ chave + '.texto' | translate }}</p>
+                </div>
+              </div>
+
+              <a
+                class="botao-link-externo"
+                [href]="opcao.link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{ chave + '.botao' | translate }}
+                <mat-icon>launch</mat-icon>
+              </a>
+            </div>
+            }
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+
+    <div class="secao-pos-acesso">
+      <h2>
+        <span class="numero-etapa">2</span>
+        {{ 'guiaAcesso.depois.titulo' | translate }}
+      </h2>
+
+      <p class="pos-acesso-descricao">
+        {{ 'guiaAcesso.depois.descricao' | translate }}
+      </p>
+
+      <div class="pos-acesso-content">
+        <div class="pos-acesso-passos">
+          @for (passo of passosPosAcesso; track passo.chave) { @let chave =
+          'guiaAcesso.depois.' + passo.chave;
+
+          <div class="card-passo-pos-acesso">
+            <div class="icone-texto">
+              <mat-icon>circle</mat-icon>
+
+              <div class="passo-textos">
+                <h3>{{ chave + '.titulo' | translate }}</h3>
+                <p>{{ chave + '.texto' | translate }}</p>
+              </div>
+            </div>
+          </div>
+          }
+        </div>
+        <div class="card-menu">
+          <h4>{{ 'guiaAcesso.depois.menu.titulo' | translate }}</h4>
+
+          <div class="banner-sig">
+            <span class="banner-sig-sigla">SIG</span>
+            <span class="banner-sig-nome">Sistema Integrado de Gestão</span>
+          </div>
+          <nav class="card-egressos">
+            <h3 class="card-egressos-titulo">Egressos</h3>
+
+            <ul class="card-egressos-lista">
+              <li><a>Busca de Egressos</a></li>
+              <li><a>Documentos do Egresso</a></li>
+              <li><a class="perfil-egresso">Perfil do Egresso</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="banner-dados">
+        <mat-icon>sync</mat-icon>
+        <p>{{ 'guiaAcesso.aviso' | translate }}</p>
+      </div>
+    </div>
+
+    <div class="ajuda-vinculo">
+      <div class="bloco-ajuda">
+        <h3>
+          <mat-icon fontSet="material-symbols-outlined">help</mat-icon>
+          {{ 'guiaAcesso.ajuda.titulo' | translate }}
+        </h3>
+        <p>{{ 'guiaAcesso.ajuda.texto' | translate }}</p>
+
+        <a class="link-email" href="mailto:egressos.proeec@ufla.br">
+          {{ 'guiaAcesso.ajuda.email' | translate }}
+        </a>
+
+        <a class="link-seta" href="/duvidas">
+          {{ 'guiaAcesso.ajuda.consultar' | translate }}
+          <mat-icon fontSet="material-symbols-outlined">arrow_forward</mat-icon>
+        </a>
+      </div>
+
+      <div class="bloco-vinculo">
+        <h3>{{ 'guiaAcesso.vinculo.titulo' | translate }}</h3>
+        <p>{{ 'guiaAcesso.vinculo.texto' | translate }}</p>
+
+        <a class="link-seta" href="/beneficios-vantagens">
+          {{ 'guiaAcesso.vinculo.link' | translate }}
+          <mat-icon fontSet="material-symbols-outlined">arrow_forward</mat-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

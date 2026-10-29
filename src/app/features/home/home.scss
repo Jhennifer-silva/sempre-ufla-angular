@@ -2,3 +2,41 @@
     width: 100%;
     overflow: hidden;
 }
+.hero-title {
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    margin: 50px 0;
+}
+
+.hero-title .title {
+    margin: 0 0 10px;
+}
+
+.hero-title .title span {
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.hero-title .subtitle {
+    margin: 0;
+}
+
+.logo-ufla {
+    max-width: 300px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 26px;
+    }
+
+    .hero-title .title span {
+        font-size: 32px;
+    }
+
+    .logo-ufla {
+        max-width: 200px;
+    }
+}

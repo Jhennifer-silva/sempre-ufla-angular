@@ -125,5 +125,73 @@
     "entrar": "Entrar",
     "contato": "Contato",
     "copyright": "Copyright © 2025 Sempre UFLA"
+  },
+  "guiaAcesso": {
+    "portal": "PORTAL DE EGRESSOS • UFLA",
+    "titulo": "Seu acesso começa aqui",
+    "descricao": "O Módulo de Egressos do SIG-UFLA foi criado para fortalecer nosso vínculo, conhecer sua jornada profissional e oferecer benefícios exclusivos.",
+    "situacaoPergunta": "Com qual situação você se identifica?",
+    "situacao": {
+      "temAcesso": "Já tenho acesso ao SIG-UFLA",
+      "precisaRecuperar": "Preciso recuperar meu acesso ao SIG-UFLA"
+    },
+    "temAcesso": {
+      "etiqueta": "PRIMEIRO, ACESSE O SISTEMA",
+      "titulo": "O acesso é feito pelo SIG-UFLA",
+      "texto": "Entre no Sistema Integrado de Gestão da UFLA. Depois de acessar, siga os três passos abaixo para atualizar seu perfil.",
+      "botao": "Ir para o SIG-UFLA"
+    },
+    "recuperacao": {
+      "titulo": "Recuperação de acesso",
+      "descricao": "Antes de seguir para o tutorial, escolha a opção que melhor atende à sua situação para recuperar o acesso ao SIG-UFLA.",
+      "senha": {
+        "titulo": "Recuperar senha",
+        "texto": "Se você lembra do seu login (usuário) do SIG-UFLA, informe-o e o sistema enviará as instruções para recuperar sua senha para o e-mail alternativo cadastrado durante sua graduação/pós-graduação.",
+        "botao": "Recuperar senha"
+      },
+      "usuario": {
+        "titulo": "Recuperar usuário",
+        "texto": "Se você não lembra do seu login, informe seu CPF e data de nascimento e o login será enviado para o e-mail alternativo cadastrado durante sua graduação/pós-graduação.",
+        "botao": "Recuperar usuário"
+      },
+      "formulario": {
+        "titulo": "Preencher formulário",
+        "texto": "Se não conseguir recuperar pelo e-mail alternativo, preencha o formulário disponível. Nossa equipe fará a liberação manual do seu acesso e entrará em contato o mais breve possível.",
+        "botao": "Preencher formulário"
+      }
+    },
+    "depois": {
+      "titulo": "Depois de entrar no SIG-UFLA",
+      "descricao": "Estes passos são realizados dentro do sistema, após o acesso.",
+      "passo1": {
+        "titulo": "Selecione Perfil do Egresso",
+        "texto": "No menu principal do SIG-UFLA, encontre a seção Egressos e selecione Perfil do Egresso."
+      },
+      "passo2": {
+        "titulo": "Aceite o termo e atualize seus dados",
+        "texto": "Aceite o termo de consentimento e confira seus dados pessoais e de contato. Atualize o que for necessário."
+      },
+      "passo3": {
+        "titulo": "Compartilhe sua trajetória",
+        "texto": "Atualize também suas informações profissionais, outros cursos e projetos realizados por você."
+      },
+      "menu": {
+        "titulo": "Localize no menu principal",
+        "sistema": "SIG",
+        "sistemaNome": "Sistema Integrado de Gestão"
+      }
+    },
+    "aviso": "Mantenha seus dados atualizados para receber oportunidades e continuar conectado(a) à UFLA.",
+    "ajuda": {
+      "titulo": "Precisa de ajuda?",
+      "texto": "Se tiver dificuldade para acessar o SIG ou atualizar seu perfil, fale com nossa equipe.",
+      "email": "egressos.proeec@ufla.br",
+      "consultar": "Consultar dúvidas"
+    },
+    "vinculo": {
+      "titulo": "Seu vínculo com a UFLA continua",
+      "texto": "Conheça os recursos e benefícios disponíveis para a comunidade de egressos.",
+      "link": "Conhecer ferramentas e benefícios"
+    }
   }
 }

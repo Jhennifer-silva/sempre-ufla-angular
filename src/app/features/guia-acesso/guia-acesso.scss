@@ -1,0 +1,890 @@
+$azul-titulo: #004b80;
+$azul-aba: #17456c;
+
+$verde: #00943e;
+$verde-aba-ativa: #009b48;
+$verde-fundo: #edf8f1;
+
+$texto-suave: #526977;
+$texto-card: #173c53;
+
+$borda: #d8e5ec;
+$fundo-card-acesso: #f1f7fa;
+$fundo-card-opcao: #f8fafb;
+$branco: #ffffff;
+
+$fonte: "Montserrat", sans-serif;
+
+@mixin centralizar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%titulo-card {
+  margin: 8px 0;
+  color: $azul-titulo;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.guia-conteudo {
+  margin-top: 32px;
+}
+
+.numero-etapa {
+  padding: 4px 10px;
+  border-radius: 99px;
+  background-color: $verde-fundo;
+  color: $verde;
+  font-size: 14px;
+  font-weight: 700;
+  user-select: none;
+}
+
+.botao-link-externo {
+  display: inline-flex;
+  gap: 8px;
+  width: fit-content;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: $verde;
+  color: $branco;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+
+  mat-icon {
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    color: $branco;
+    font-size: 16px;
+  }
+}
+
+.guia-acesso {
+  box-sizing: border-box;
+  padding: 32px 16px;
+  width: 100%;
+  min-width: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.guia-cabecalho h1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: $azul-titulo;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.guia-descricao {
+  margin-bottom: 24px;
+  color: $texto-suave;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px;
+}
+
+.guia-pergunta {
+  color: $azul-titulo;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.secao-pos-acesso {
+  margin-top: 58px;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: $azul-titulo;
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
+
+:host ::ng-deep .guia-abas {
+  .mat-mdc-tab-header,
+  .mat-mdc-tab-label-container {
+    border-bottom: none;
+  }
+
+  .mat-mdc-tab-label-container {
+    flex-grow: 0;
+  }
+
+  .mdc-tab-indicator,
+  .mdc-tab__ripple {
+    display: none;
+  }
+
+  .mat-mdc-tab {
+    flex: 0 0 auto;
+    min-width: 0;
+    height: 44px;
+    margin: 0 6px 8px 0;
+    padding: 0 12px;
+    border: 1px solid $borda;
+    border-radius: 8px;
+    background: $fundo-card-opcao;
+
+    .mdc-tab__text-label {
+      color: $azul-aba;
+      font-family: $fonte;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    // Aba selecionada
+    &.mdc-tab--active {
+      border-color: $verde-aba-ativa;
+      background: $verde-aba-ativa;
+
+      .mdc-tab__text-label {
+        color: $branco;
+      }
+    }
+  }
+}
+
+.card-acesso-sig {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 32px;
+  border: 1px solid $borda;
+  border-radius: 12px;
+  background-color: $fundo-card-acesso;
+}
+
+.card-icone-texto {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  mat-icon {
+    @include centralizar;
+    width: 62px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: $branco;
+    color: $azul-titulo;
+    font-size: 40px;
+    font-variation-settings:
+      "FILL" 0,
+      "wght" 200;
+  }
+}
+
+.card-textos {
+  max-width: 650px;
+
+  span {
+    margin: 0;
+    color: $azul-titulo;
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  h3 {
+    @extend %titulo-card;
+  }
+
+  p {
+    margin: 0;
+    color: $texto-card;
+    font-family: $fonte;
+    font-size: 14px;
+    line-height: 160%;
+  }
+}
+
+.aba-recuperacao {
+  padding: 0 48px;
+
+  h3 {
+    @extend %titulo-card;
+  }
+
+  p {
+    color: $texto-suave;
+    font-size: 14px;
+  }
+}
+
+.lista-opcoes-recuperacao {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-opcao-recuperacao {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid $borda;
+  border-radius: 12px;
+  background-color: $fundo-card-opcao;
+}
+
+.icone-texto {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  mat-icon {
+    @include centralizar;
+    color: $verde;
+    font-size: 6px;
+  }
+}
+
+.opcao-textos {
+  h4 {
+    margin: 0 0 8px 0;
+    color: $azul-titulo;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0;
+    color: $texto-suave;
+    font-size: 14px;
+  }
+}
+
+.pos-acesso-descricao{
+    margin-top: 16px;
+    color: $texto-suave;
+    font-size: 14px;
+}
+
+.pos-acesso-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.card-passo-pos-acesso {
+  margin-bottom: 12px;
+}
+
+.passo-textos {
+  h3 {
+    color: $azul-titulo;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  p {
+    margin: 0;
+    color: $texto-suave;
+    font-family: $fonte;
+    font-size: 14px;
+    line-height: 160%;
+  }
+}
+
+.card-menu {
+  background-color: $fundo-card-opcao;
+  border: 1px solid $borda;
+  border-radius: 12px;
+  height: fit-content;
+  padding: 24px;
+
+  h4 {
+    margin: 0 0 18px 0;
+    color: $azul-titulo;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.banner-sig {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  border-radius: 12px 12px 0 0;
+  width: 375px;
+  height: 70px;
+  box-sizing: border-box;
+  padding: 0 14px;
+  background: linear-gradient(
+    to bottom,
+    #3d9163 0%,
+    #1d7a48 45%,
+    #0b5a31 50%,
+    #0f6d3a 85%,
+    #1a7d47 100%
+  );
+}
+
+.banner-sig-sigla {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.banner-sig-nome {
+  margin-top: 4px;
+  color: #ffffff;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  font-variant: small-caps;
+  letter-spacing: 0.5px;
+}
+
+.card-egressos {
+  border: 1px solid #b9bfc7;
+  border-radius: 0 0 12px 12px;
+  background-color: #f2f2f2;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.card-egressos-titulo {
+  margin: 0;
+  padding: 5px 8px;
+  border-bottom: 1px solid #b9bfc7;
+  background: linear-gradient(to bottom, #f4f5f7, #e1e4e8);
+  color: #444444;
+  font-size: 15px;
+  font-weight: 700;
+  font-variant: small-caps;
+  letter-spacing: 0.6px;
+  text-align: left;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.card-egressos-lista {
+  margin: 0;
+  padding: 8px 10px 10px;
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 3px 0;
+
+    &::before {
+      content: "";
+      flex-shrink: 0;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #4a69a3;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%, #8fabdc, #5a7ebf);
+    }
+
+    &:has(.perfil-egresso):hover::before {
+      border-color: #3a7d48;
+      background: radial-gradient(circle at 35% 35%, #8fd49c, #4b9a5a);
+    }
+  }
+
+  a {
+    color: #4b9a5a;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: default;
+  }
+
+  a.perfil-egresso {
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.banner-dados {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+  padding: 0px 16px;
+  border-radius: 8px;
+  background-color: #edf8f1;
+
+  mat-icon {
+    color: #00943e;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+  }
+
+  p {
+    color: #173c53;
+    font-size: 15px;
+    line-height: 150%;
+  }
+}
+
+.ajuda-vinculo {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  margin: 32px 0;
+  padding-top: 24px;
+  border-top: 1px solid #e3ebf2;
+  font-family: $fonte;
+
+  h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 12px 0;
+    color: $azul-titulo;
+    font-size: 18px;
+    font-weight: 600;
+
+    mat-icon {
+      width: 22px;
+      height: 22px;
+      font-size: 22px;
+    }
+  }
+
+  p {
+    margin: 0 0 16px 0;
+    color: $texto-suave;
+    font-size: 13px;
+    line-height: 160%;
+  }
+}
+
+.bloco-ajuda {
+  padding-right: 32px;
+}
+
+.bloco-vinculo {
+  padding-left: 32px;
+  border-left: 1px solid #e3ebf2;
+}
+
+.link-email,
+.link-seta {
+  color: $azul-titulo;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.link-email {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.link-seta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  mat-icon {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .guia-acesso {
+    padding: 24px 16px;
+  }
+
+  .card-acesso-sig {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .card-icone-texto {
+    gap: 16px;
+  }
+
+  .aba-recuperacao {
+    padding: 0 16px;
+  }
+
+  .pos-acesso-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .pos-acesso-passos {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .card-menu {
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .banner-sig {
+    width: 100%;
+    max-width: 375px;
+    gap: 16px;
+  }
+
+  .banner-sig-sigla {
+    font-size: 40px;
+  }
+
+  .banner-sig-nome {
+    font-size: 13px;
+  }
+
+  .ajuda-vinculo {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .bloco-ajuda {
+    padding-right: 0;
+  }
+
+  .bloco-vinculo {
+    padding: 24px 0 0;
+    border-left: none;
+    border-top: 1px solid #e3ebf2;
+  }
+}
+
+@media (max-width: 600px) {
+  .guia-acesso {
+    padding: 20px 12px;
+  }
+
+  .guia-conteudo {
+    margin-top: 24px;
+  }
+
+  .guia-cabecalho h1 {
+    align-items: flex-start;
+    font-size: 23px;
+    line-height: 1.4;
+  }
+
+  .numero-etapa {
+    flex-shrink: 0;
+  }
+
+  .guia-descricao {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .guia-pergunta {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  :host ::ng-deep .guia-abas {
+    width: 100%;
+    min-width: 0;
+
+    .mat-mdc-tab-header {
+      max-width: 100%;
+    }
+
+    .mat-mdc-tab-label-container {
+      min-width: 0;
+      overflow-x: auto;
+    }
+
+    .mat-mdc-tab {
+      padding: 0 10px;
+      margin-right: 4px;
+    }
+
+    .mat-mdc-tab .mdc-tab__text-label {
+      font-size: 11px;
+    }
+  }
+
+  .card-acesso-sig {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .card-icone-texto {
+    align-items: flex-start;
+    gap: 12px;
+    min-width: 0;
+
+    mat-icon {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      font-size: 32px;
+    }
+  }
+
+  .card-textos {
+    min-width: 0;
+
+    h3 {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    p {
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  .botao-link-externo {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 14px;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .aba-recuperacao {
+    padding: 0;
+  }
+
+  .aba-recuperacao h3 {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .aba-recuperacao > p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .lista-opcoes-recuperacao {
+    gap: 12px;
+  }
+
+  .card-opcao-recuperacao {
+    gap: 16px;
+    padding: 14px;
+  }
+
+  .icone-texto {
+    align-items: flex-start;
+    gap: 12px;
+    min-width: 0;
+
+    mat-icon {
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+  }
+
+  .opcao-textos {
+    min-width: 0;
+
+    h4 {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 1.7;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  .secao-pos-acesso {
+    margin-top: 40px;
+
+    h2 {
+      align-items: flex-start;
+      font-size: 19px;
+      line-height: 1.5;
+    }
+  }
+
+  .passo-textos {
+    h3 {
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  .card-menu {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .card-menu h4 {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .banner-sig {
+    width: 100%;
+    max-width: 100%;
+    min-height: 64px;
+    height: auto;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .banner-sig-sigla {
+    flex-shrink: 0;
+    font-size: clamp(30px, 9vw, 40px);
+  }
+
+  .banner-sig-nome {
+    min-width: 0;
+    font-size: clamp(10px, 3vw, 13px);
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+
+  .card-egressos-titulo {
+    font-size: 14px;
+  }
+
+  .card-egressos-lista {
+    padding: 8px;
+
+    li {
+      gap: 7px;
+      min-width: 0;
+    }
+
+    a {
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  .banner-dados {
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 24px;
+    padding: 12px;
+
+    mat-icon {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      font-size: 26px;
+    }
+
+    p {
+      min-width: 0;
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.7;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  .ajuda-vinculo {
+    margin: 24px 0;
+    padding-top: 20px;
+    gap: 24px;
+
+    h3 {
+      align-items: flex-start;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 1.7;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  .bloco-ajuda,
+  .bloco-vinculo {
+    min-width: 0;
+  }
+
+  .link-email,
+  .link-seta {
+    font-size: 12px;
+    overflow-wrap: anywhere;
+  }
+
+  .link-seta {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 360px) {
+  .guia-acesso {
+    padding: 16px 10px;
+  }
+
+  .card-acesso-sig {
+    padding: 12px;
+  }
+
+  .card-icone-texto {
+    gap: 10px;
+  }
+
+  .card-icone-texto mat-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+  }
+
+  .card-opcao-recuperacao {
+    padding: 12px;
+  }
+
+  .card-menu {
+    padding: 12px;
+  }
+
+  .banner-sig {
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .banner-sig-sigla {
+    font-size: 28px;
+  }
+
+  .banner-sig-nome {
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+}

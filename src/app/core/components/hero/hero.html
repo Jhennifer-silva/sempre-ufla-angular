@@ -1,0 +1,17 @@
+<section
+    class="hero-container"
+    [class.align-left]="alignment === 'left'"
+    [style.background-image]="backgroundImage ? 'url(' + backgroundImage + ')' : null">
+    @if (title || subtitle) {
+        <div class="hero-copy">
+            @if (title) {
+                <h1 class="title">{{ title }}</h1>
+            }
+            @if (subtitle) {
+                <p class="subtitle">{{ subtitle }}</p>
+            }
+        </div>
+    }
+
+    <ng-content></ng-content>
+</section>
